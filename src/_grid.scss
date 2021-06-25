@@ -1,0 +1,63 @@
+@import "_theme.scss";
+
+[container-flex]{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    // Justify
+    &[j-start]{
+        justify-content: flex-start;
+    }
+    &[j-end]{
+        justify-content: flex-end;
+    }
+    &[j-center]{
+        justify-content: center;
+    }
+    
+    // Items
+    &[ai-start]{
+        align-items: flex-start;
+    }
+    &[ai-end]{
+        align-items: flex-end;
+    }
+    &[ai-center]{
+        align-items: center;
+    }
+
+    // Content
+    &[ac-start]{
+        align-content: flex-start;
+    }
+    &[ac-end]{
+        align-content: flex-end;
+    }
+    &[ac-center]{
+        align-content: center;
+    }
+}
+
+[col]{
+    flex:1;
+    padding-left:$padding-default;
+    padding-right:$padding-default;
+    box-sizing: border-box;
+
+    // @Mediaquery Screen
+    @each $current-breakpoint in $breakpoint-name {
+        $h: index($breakpoint-name, $current-breakpoint);
+        @debug nth($breakpoint-name, $h);
+
+        @media screen and (min-width: nth($breakpoint-min, $h) * 1px) and (max-width: nth($breakpoint-max, $h) * 1px) {
+            @for $i from 1 through $grid-cols {
+                &[#{nth($breakpoint-name, $h)}="#{$i}"] {
+                    flex: 0 0 calc(#{$grid-area} / (#{$grid-cols} / #{$i}) * 1%);
+                }
+            }
+        }
+    }
+}

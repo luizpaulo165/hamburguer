@@ -1,0 +1,48 @@
+// Colours
+$color-primary:#E05E3B;
+$color-secundary:#074866;
+$color-tertiary:#F6F0E6;
+$color-success:#4f964d;
+$color-error:#d33a3a;
+$color-warning:#d6861d;
+$color-dark:#202020;
+$color-light:#ffffff;
+$blue-opaque:#6A91A3;
+$gray:#F8F8F8;
+
+// Typography
+$font-normal:16px;
+$font-small:14px;
+
+// Padding/Margins
+$padding-default:16px;
+$margin-default:32px;
+
+// Grid
+$grid-area: 100;
+$grid-cols: 12;
+$grid-gutter:0.25rem;
+$breakpoint-name: xs, sm, md, lg, xl;
+$breakpoint-min: 0, 576, 768, 1200, 1980;
+$breakpoint-max: 575, 767, 1199, 1979, 2220;
+// $min-breakpoint: (
+//     xs: 0,
+//     sm: 576,
+//     md: 768,
+//     lg: 1200,
+//     xl: 1980
+// );
+// $max-breakpoint: (
+//     xs: 575,
+//     sm: 767,
+//     md: 1199,
+//     lg: 1979,
+//     xl: 2220
+// );
+
+// Breakpoint
+$xs: 575;
+$sm: 576;
+$md: 768;
+$lg: 992;
+$xl: 1200;

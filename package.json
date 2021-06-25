@@ -1,0 +1,35 @@
+{
+  "name": "hanburger",
+  "version": "1.0.0",
+  "description": "CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizpaulo165/hamburguer.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "sass",
+    "scss"
+  ],
+  "author": "Papaulo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizpaulo165/hamburguer/issues"
+  },
+  "homepage": "https://github.com/luizpaulo165/hamburguer#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}

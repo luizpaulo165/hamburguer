@@ -1,0 +1,28 @@
+@import "_theme.scss";
+
+// Breakpoints 
+@mixin xs {
+    @media screen and (max-width: $xs * 1px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media screen and (min-width: $sm * 1px) and (max-width: $md - 1px) {
+        @content;
+    }
+}
+ @mixin md {
+    @media screen and (min-width: $md * 1px) and (max-width: $lg - 1px) {
+        @content;
+    }
+}
+ @mixin lg {
+    @media screen and (min-width: $lg * 1px) and (max-width: $xl - 1px) {
+        @content;
+    }
+}
+ @mixin xl {
+    @media screen and (min-width: $xl * 1px) {
+        @content;
+    }
+}
