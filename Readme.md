@@ -24,3 +24,13 @@ Caso queira mudar o comportamento da coluna de acordo com a resolução, basta a
         Col com atributos para resoluções
     </div>
 ````
+
+#### Resoluções e atributos 
+
+Atributo  | Dispositivo
+--------- | ------
+xl        | Desktop - Resolução acima de 1920px
+lg        | Desktop - Resolução baixo de 1920px
+md        | Tablets ou Notebooks de resolução baixa
+sm        | Mobile na visão horizontal
+xs        | Mobile
